@@ -16,6 +16,14 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'  # Specify your desired Python version
+      - name: Paths 
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import os
+            print("Directory contents:")
+            for f in os.listdir():
+                print(f)
 
       # - name: Install dependencies
       #   run: |
