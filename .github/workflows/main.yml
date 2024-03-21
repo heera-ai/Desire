@@ -23,24 +23,15 @@ jobs:
           python-version: '3.8'  # Specify your desired Python version
       
 
-      - name: Python script
-        uses: jannekem/run-python-script-action@v1
-        with:
-          script: |
-            import os
-            print(os.getcwd())
-            print(os.listdir())
-      # - name: Hello World
-      #   run: python ${{ env.DEVOPS_DIR }}/greeting.py
-      #   shell: sh
+      
 
-      # - name: Install dependencies
-      #   run: |
-      #     python -m pip install --upgrade pip
-      #     pip install -r requirements.txt  # If your script has dependencies, add them to requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # If your script has dependencies, add them to requirements.txt
 
       - name: Run Python script
-        run: python ../../greeting.py  # Replace hello.py with your script name
+        run: python greeting.py  # Replace hello.py with your script name
 
 
   # Explore-GitHub-Actions:
