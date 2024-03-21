@@ -7,6 +7,7 @@ on:
     branches: [ master ]
   schedule: ## Schedule the job to run at 12.am daily.
     - cron: '* * * * *'
+    
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
