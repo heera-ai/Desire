@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule: ## Schedule the job to run at 12.am daily.
-    - cron: '1 * * * *'
+    - cron: '* * * * *'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
