@@ -2,16 +2,16 @@ name: Super-Linter
 
 on: push
 
-jobs:
-    super-lint:
-        name: Lint code base
-        runs-on: ubntu-latest
-    steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
+jobs: 
+ super-lint:
+  name: Lint code base
+   runs-on: ubntu-latest
+   steps:
+    - name: Checkout code
+    uses: actions/checkout@v4
 
-        - name: Run Super-Linter
-          uses: github/superlinter@v3
-          env:
-            DEFAULT_BRANCH: main
+    - name: Run Super-Linter
+    uses: github/superlinter@v3
+    env:
+     EFAULT_BRANCH: main
         
