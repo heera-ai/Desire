@@ -23,7 +23,7 @@ jobs:
       #     pip install -r requirements.txt  # If your script has dependencies, add them to requirements.txt
 
       - name: Run Python script
-        run: python greeting.py  # Replace hello.py with your script name
+        run: python ../../greeting.py  # Replace hello.py with your script name
 
 
   # Explore-GitHub-Actions:
