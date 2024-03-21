@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Check out files
+      - name: Check out files
         uses: actions/checkout@v4
         with:
           sparse-checkout: .
