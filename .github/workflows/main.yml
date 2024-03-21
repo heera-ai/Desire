@@ -17,9 +17,17 @@ jobs:
         with:
           python-version: '3.8'  # Specify your desired Python version
       
-      - name: Hello World
-        run: python ${{ env.DEVOPS_DIR }}/greeting.py
-        shell: sh
+
+      - name: Python script
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import os
+            print(os.getcwd())
+            print(os.listdir())
+      # - name: Hello World
+      #   run: python ${{ env.DEVOPS_DIR }}/greeting.py
+      #   shell: sh
 
       # - name: Install dependencies
       #   run: |
